@@ -1,0 +1,75 @@
+/* src/App.css */
+.App {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  min-width: 214vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.roster-container {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 20px; /* Añade un espacio entre los elementos */
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+input.filter-input {
+  padding: 8px;
+  margin-bottom: 20px;
+  background-color: ghostwhite;
+  border: 1px solid #333;
+  color: black;
+  border-radius: 4px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+/* Nuevo estilo para el componente Roster */
+.roster {
+  flex: 2; /* Ajusta este valor según el espacio que desees que ocupe */
+}
+
+.player-details {
+  flex: 1; /* Esto hará que PlayerDetails ocupe menos espacio */
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+
+  .logo{
+    top: -46px;
+  }
+
+  .roster-container {
+    flex-direction: column; /* Cambia la dirección del flex a columna para pantallas pequeñas */
+    gap: 10px; /* Ajusta el espacio entre los elementos */
+  }
+
+  input.filter-input {
+    width: 100%; /* Asegura que el input ocupe todo el ancho disponible */
+  }
+
+  .roster, .player-details {
+    flex: none; /* Elimina el comportamiento de flex */
+    width: 100%; /* Asegura que los elementos ocupen todo el ancho disponible */
+  }
+
+  .roster-table th, .roster-table td {
+    padding: 8px; /* Reduce el padding para celdas en pantallas pequeñas */
+    font-size: 0.9rem; /* Ajusta el tamaño de la fuente */
+  }
+
+  .roster-table th {
+    font-size: 1rem; /* Ajusta el tamaño de la fuente */
+  }
+}

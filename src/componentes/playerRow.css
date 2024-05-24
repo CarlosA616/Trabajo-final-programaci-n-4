@@ -1,0 +1,11 @@
+/* src/components/PlayerRow.css */
+.player-row {
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    color: black;
+}
+
+.player-row:hover {
+    background-color: #FFCC99;
+    /* Ajusta el color según sea necesario */
+}

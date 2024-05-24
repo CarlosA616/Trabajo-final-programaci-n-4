@@ -1,0 +1,70 @@
+/* src/components/Roster.css */
+.roster {
+    margin: 20px;
+    padding: 50px;
+}
+
+input.filter-input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button-group {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.button-group button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+
+}
+
+.button-group button:hover {
+    background-color: #FF7900;
+    color: ghostwhite;
+}
+
+.roster-table {
+    color: black;
+    width: 100%;
+    border-collapse: collapse;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+}
+
+.roster-table th{
+    text-shadow: 3px 3px 3px rgb(185 185 185 / 97%);
+}
+
+.roster-table td {
+    text-transform: capitalize;
+    text-shadow: 0px 0px 6px rgb(255 121 0);
+}
+
+.roster-table th,
+.roster-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.roster-table th {
+    background-color: #333;
+    color: white;
+}
+
+.roster-table td:hover {
+    cursor: pointer;
+}

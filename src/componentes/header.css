@@ -1,0 +1,95 @@
+/* src/components/header.css */
+.navContainer{
+    margin: -20px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+
+}
+
+.header {
+    position: relative;
+    background-color: #1f1f1f;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin: 0;
+    height: 10vh;
+}
+.header1 {
+    margin: 0;
+    position: relative;
+    background-color: #FF7900;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    height: 10vh;
+}
+
+.header1  .navbar-collapse  {
+    display: flex;
+    flex-basis: auto;
+    justify-content: space-around;
+}
+
+.logo {
+    color: white !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    width: 18.5%;
+    top: -22px;
+    left: 2pc;
+    display: block;
+    /* Ensure the logo is above the shape */
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin-left: 18px;
+    font-size: 1rem;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Ensure the nav links are above the shape */
+}
+
+.navbar-nav {
+    gap: 15px;
+}
+
+.navbar-nav .nav-link .fa-icon {
+    gap: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ddd !important;
+}
+
+.navbar-toggler {
+    border: none;
+    position: relative;
+    z-index: 2;
+    /* Ensure the toggler is above the shape */
+}
+
+#botonesHeaderNegro {
+    display: flex;
+    gap: 50px;
+}
+
+#exit {
+    position: relative;
+    left: 80pc;
+    gap: 10px;
+    color: grey;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {}
+
+
+}
